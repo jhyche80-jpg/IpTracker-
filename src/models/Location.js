@@ -1,26 +1,29 @@
-// What do i need? ip address, city and state and the zipcode , time zone and the isp
 import { zipRanges } from "../components/state.js";
+
 export default class Location {
-    constructor(ip, city, region, zip, isp, timezone) {
+    constructor(ip, city, region, postalCode, isp, timezone, state) {
         this.ip = ip;
         this.location = {
             city: city,
+            postalCode: postalCode,
             region: region,
-            postalCode: zip,
             timezone: timezone
         };
         this.isp = isp;
-        this.state = this.getState();
+  
     }
-     getState(){
-        const zipNum = parseInt(this.location.postalCode)
-        for (const range of zipRanges){
-            if (zipNum>= zipRanges.from &&zipNum<= zipRanges.to ){
-                
-                return zipRanges.state
-             }
-        }
-        
 
+    getState() {
+        const zipNum = parseInt(this.location.postalCode, 10);
+        console.log("zipNum:", zipNum, "postalCode:", this.location.postalCode);
+        for (const range of zipRanges) {
+
+            if (zipNum >= range.from && zipNum <= range.to) {
+
+                return range.state;
+            }
+        }
+        console.warn("No matching state for zip:", zipNum);
+        return null;
     }
 }

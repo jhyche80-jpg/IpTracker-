@@ -111,7 +111,7 @@ Problems  will arise every time you code knowing the problem is key to understan
 
 1. I noticed that the website did not show us the state and we needed the state   
 2. My file paths were really messed up and I could not figure out wha was wrong with it 
-3. 
+3. zip code isnt popping up, 
 4. 
 
 ### Solutions
@@ -119,7 +119,7 @@ Problems  will arise every time you code knowing the problem is key to understan
 
 1.  I went to a website and hard coded in the zipcodes 
 2. I remade the file paths and redownloaded live server it too me a long time however
-3. 
+3. Turns out You do not need the zipcode for that function because region gives you the state ! i ended up deleting the function i made and then adding a contional .
 4. 
 
 ## Reflection
