@@ -6,7 +6,17 @@ const ipAddresstext = document.getElementById('IPcontainer')
 const Loccontainertext = document.getElementById("Loccontainertext")
 const TimezoneText = document.getElementById('Timezonecontainer')
 const ISPtext = document.getElementById("ISPcontainer")
+async function  findLocation(){
+        const lat = await location.location.lat
+        const long = await location.location.lng
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors"
+    }).addTo(map);
 
+    L.marker([lat, long]).addTo(map)
+        .bindPopup(`Your IP: ${ip}`)
+        .openPopup();
+}
 async function main() {
     try {
         const ipadd = ipAddress.value
@@ -18,7 +28,9 @@ async function main() {
             data.location.region,
             data.location.postalCode,
             data.isp,
-            data.location.timezone
+            data.location.timezone,
+            data.location.lat,
+            data.location.lng
         );
         console.log(location.location.postalCode);
         console.log(location)
@@ -37,6 +49,7 @@ async function main() {
     } finally {
         console.log("done!")
     }
+    findLocation()
 }
 main()
 search.addEventListener('click', () => {
