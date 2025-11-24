@@ -95,6 +95,8 @@ In this section you should say what you did and why and if you made refinements 
 - I added the title and made the Basic Html structure for the page
 - I added he input field and other static elements like the titles of each sections that be updated based on the search criteria. 
 - I added a div that will display the full map and location for later use. 
+2. I created a class called Location that will get feched by the Api and asign values to it. 
+-  I also made another doccument that will help with a function and help me make a stategit 
 ## Troubleshooting 
     Ask: “What should happen right now?”
     Ask: “What’s actually happening?”
@@ -102,8 +104,7 @@ In this section you should say what you did and why and if you made refinements 
 ### Problems 
 Problems  will arise every time you code knowing the problem is key to understanding it !
 
-
-1.  
+1. I noticed that the website did not show us the state and we needed the state   
 2. 
 3. 
 4. 
@@ -111,7 +112,7 @@ Problems  will arise every time you code knowing the problem is key to understan
 ### Solutions
  Finding out how to fix those problems will be important!
 
-1. 
+1.  I went
 2. 
 3. 
 4. 
@@ -122,7 +123,7 @@ Sometimes there are questions to reflect on the project but if there is not , Us
 ## References 
 - https://stackoverflow.com/questions/49306970/correct-input-type-for-ip-address
 - https://www.w3schools.com/html/html_form_input_types.asp
-
+- https://www.structnet.com/instructions/zip_min_max_by_state.htm
 
 
 ### Programs I used 
