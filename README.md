@@ -98,7 +98,10 @@ In this section you should say what you did and why and if you made refinements 
 2. I created a class called Location that will get feched by the Api and asign values to it. 
 -  I also made another doccument that will help with a function and help me find the state ! I streamlined it by finding a website and copy and pasting the template 50+ times and then filled it in line by line. 
 -  I made a function that will loop through the whole of the zipranes and find where the number is between and added notes just for  people who are wondering why i have more than 50!
-3. I made the fetch function  in another js file. 
+3. I made the fetch function  in another function and made a simple error message until i make the next doccument 
+4. I made a document to take the specific type of error. 
+5. I put I started on the main js file to fet the data and store the data into a let  variable . 
+6. 
 ## Troubleshooting 
     Ask: “What should happen right now?”
     Ask: “What’s actually happening?”
@@ -107,15 +110,15 @@ In this section you should say what you did and why and if you made refinements 
 Problems  will arise every time you code knowing the problem is key to understanding it !
 
 1. I noticed that the website did not show us the state and we needed the state   
-2. 
+2. My file paths were really messed up and I could not figure out wha was wrong with it 
 3. 
 4. 
 
 ### Solutions
  Finding out how to fix those problems will be important!
 
-1.  I went
-2. 
+1.  I went to a website and hard coded in the zipcodes 
+2. I remade the file paths and redownloaded live server it too me a long time however
 3. 
 4. 
 

@@ -13,8 +13,9 @@
   <!-- Leaflet JS -->
   <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <!-- Your JS -->
-  <script defer src="main.js"></script>
+  <script defer type= "module" src="./src/main.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 
@@ -23,8 +24,8 @@
     <div>
       <h1>Ip Address Tracker</h1>
       <input type="search" class="input-box" placeholder="Search For any Ip Address or domian" autocomplete="off"
-        style="width: 50%;" />
-      <button type="Submit" class="bg-black"><img src="../images/icon-arrow.svg" alt="Submit"></button>
+        style="width: 50%;" id="InputIP" />
+      <button type="Submit" class="bg-black" id="Search"><img src="./images/icon-arrow.svg" alt="Submit"></button>
     </div>
     <div id="LocaionDisplay" class="d-flex flex-row ">
       <div id="Address" class="container">

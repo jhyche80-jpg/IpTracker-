@@ -1,9 +1,14 @@
-import { NetworkError } from "./ErrorHandler/ErrorHandler"
-import { DataError } from "./ErrorHandler/ErrorHandler"
-export  async function fetchData(url){
+import { DataError, NetworkError } from "../models/ErrorHandler/ErrorHandler.js";
+
+export  default async function fetchData(url){
     try{
         const response = await fetch(url)
-        data = await response.json()
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        let data = await response.json()
+        
         return data
     }catch(error){
         if (error instanceof NetworkError){

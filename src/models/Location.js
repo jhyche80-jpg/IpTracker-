@@ -1,6 +1,6 @@
 // What do i need? ip address, city and state and the zipcode , time zone and the isp
-import { zipRanges } from "../components/state";
-export class Location {
+import { zipRanges } from "../components/state.js";
+export default class Location {
     constructor(ip, city, region, zip, isp, timezone) {
         this.ip = ip;
         this.location = {
