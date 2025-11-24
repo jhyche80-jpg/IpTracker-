@@ -96,7 +96,9 @@ In this section you should say what you did and why and if you made refinements 
 - I added he input field and other static elements like the titles of each sections that be updated based on the search criteria. 
 - I added a div that will display the full map and location for later use. 
 2. I created a class called Location that will get feched by the Api and asign values to it. 
--  I also made another doccument that will help with a function and help me make a stategit 
+-  I also made another doccument that will help with a function and help me find the state ! I streamlined it by finding a website and copy and pasting the template 50+ times and then filled it in line by line. 
+-  I made a function that will loop through the whole of the zipranes and find where the number is between and added notes just for  people who are wondering why i have more than 50!
+3. I made the fetch function  in another js file. 
 ## Troubleshooting 
     Ask: “What should happen right now?”
     Ask: “What’s actually happening?”
