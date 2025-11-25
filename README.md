@@ -101,7 +101,8 @@ In this section you should say what you did and why and if you made refinements 
 3. I made the fetch function  in another function and made a simple error message until i make the next doccument 
 4. I made a document to take the specific type of error. 
 5. I put I started on the main js file to fet the data and store the data into a let  variable . 
-6. 
+6. I then spent time debugging the app
+7. I added  the map system 
 ## Troubleshooting 
     Ask: “What should happen right now?”
     Ask: “What’s actually happening?”

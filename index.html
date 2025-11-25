@@ -13,7 +13,7 @@
   <!-- Leaflet JS -->
   <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <!-- Your JS -->
-  <script defer type= "module" src="./src/main.js"></script>
+  <script defer type="module" src="./src/main.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | IP Address Tracker</title>
@@ -21,13 +21,24 @@
 
 <body>
   <header>
-    <div>
+    <div  id="Topchoice" class="d-flex flex-column align-items-center">
       <h1>Ip Address Tracker</h1>
-      <input type="search" class="input-box" placeholder="Search For any Ip Address or domian" autocomplete="off"
-        style="width: 50%;" id="InputIP" />
-      <button type="Submit" class="bg-black" id="Search"><img src="./images/icon-arrow.svg" alt="Submit"></button>
+     
+      <div class="d-flex flex-row mb-2 mt-3">
+        <div>
+
+
+        
+        <input type="search" class="input-box \" placeholder="Search For any Ip Address or domian" autocomplete="off"
+          style="width: 50vh; " id="InputIP" minlength="7" maxlength="15"/>
+          <span class="Tool-tip">Ip address must be between 7-15  characters long</span>
+          </div>
+        <button type="Submit" class="bg-black" id="Search"><img src="./images/icon-arrow.svg" alt="Submit"></button>
+
+      </div> 
+      <div id="ErrorBox"></div>
     </div>
-    <div id="LocaionDisplay" class="d-flex flex-row ">
+    <div id="LocaionDisplay" class="d-flex flex-row mt-5 ">
       <div id="Address" class="container">
         <p class="LocTitle"> IP ADDRESS</p>
         <h2 id="IPcontainer"></h2>
@@ -52,12 +63,7 @@
 
     </div>
   </main>
-  <footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  </footer>
+
 </body>
 
 </html>

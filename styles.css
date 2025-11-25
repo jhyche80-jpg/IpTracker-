@@ -1,2 +1,77 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+button{
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    width: 7vh;
+}
+input{
+    height: 10vh;
+    border-radius: 20px 0 0 10px;
+  padding-left: 10px;
+}
+#Topchoice {
+    color: white;
+    width: auto;
+   
+}
+
+#map {
+    height: 75vh;
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+header {
+    background-image: url("./images/pattern-bg-desktop.png");
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#LocaionDisplay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 150px;
+    background-color: white;
+    z-index: 1000;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+.Tool-tip{
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    
+}
+#ErrorBox{
+    display: hidden; 
+  color: rgb(207, 133, 36);
+}
+.container {
+    border-right: solid gray;
+    ;
+}
+input:hover, input:focus, button:hover{
+    border: solid red ;
+}
+button:focus{
+    opacity: 80%;
+}
+#IPcontainer:hover,#Loccontainertext:hover,#Timezonecontainer:hover, #ISPcontainer:hover {
+   color: blue;
+}
