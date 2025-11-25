@@ -20,7 +20,7 @@ The app fetches IP information using the IP Geolocation API by IPify and display
 interface is fully responsive and includes accessibility features for a better user experience.
 
 
-You can find the depployed site here at https://jhyche80-jpg.github.io/IpTracker-/ .
+You can find the deployed site here at https://jhyche80-jpg.github.io/IpTracker-/ .
 ### Features
 1. Display the visitor’s own IP address and location on page load.
 2. Search for any IP address or domain and display:
