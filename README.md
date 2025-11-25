@@ -1,30 +1,39 @@
 # FrontEnd Mentor Ip Tracker 
 ## Table of contents 
- 1. Overview 
- 2. Problem     
-    1. Problem Breakdown/ Goal
-    2. Questions and Answer
-    3. Input?
-    4. Output?
-    5. Step by step Plan  
- 3. What I did step by step
- 4. What I did in Detail during the project 
- 5. Trouble Shooting 
- 6. Reflection 
- 7. References
-    1. Programs Used 
-    2. Websites Used 
-## Project Overview 
-Your challenge is to build out this IP Address Tracker app and get it looking as close to the design as possible. To get the IP Address locations
-, you'll be using the IP Geolocation API by IPify. To generate the map, we recommend using LeafletJS.
+ 1. [Overview](#Overview)
+    1. [Features](#Features) 
+    2. [Usage](#Usage)
+ 2. [Problem](#problem)     
+    1. [Problem Breakdown/ Goal](#problem-breakdown-goal)
+    2. [Questions and Answer](#questions--answers)
+    3. [Input?](#input-)
+    4. [Output?](#output-)
+    5. [Step by step Plan](#step-by-step-process-what-will-i-need-to-do)
+ 3. [What I did step by step](#what-i-did-in-detail)
+ 4. [Trouble Shooting ](#troubleshooting)
+ 5. [Reflection](#reflection)
+ 6. [References](#references)
+    1. [Programs Used ](#programs-i-used)
+## Overview 
+The IP Address Tracker is a web application that allows users to track any IP address or domain and view its geolocation on an interactive map. 
+The app fetches IP information using the IP Geolocation API by IPify and displays the results with an interactive map powered by LeafletJS. The 
+interface is fully responsive and includes accessibility features for a better user experience.
+### Features
+1. Display the visitor’s own IP address and location on page load.
+2. Search for any IP address or domain and display:
+    - IP address
+    - Location (city and state)
+    - Timezone
+    - ISP
+3. Interactive LeafletJS map centered on the location.
+4. Input validation to ensure correct IP or domain formats.
+5. Responsive design for mobile and desktop.
+6. Hover states and accessibility features using ARIA attributes.
+### Usage
 
-Your users should be able to:
-
-1. See their own IP Address on the map on the initial page load
-2. Search for any IP addresses or domains and see the key information and location
-3. View the optimal layout for each page depending on their device's screen size
-4. See hover states for all interactive elements on the page
-5. Want some support on the challenge? Join our community and ask questions in the help channel.
+- Enter an IP address or domain in the input field and click Search.
+- The app will display the IP information and update the map with a marker at the corresponding location.
+- On page load, the app automatically displays the visitor’s IP address and location.
 
 ## Problem 
 ### Problem Breakdown!/ Goal
@@ -103,6 +112,11 @@ In this section you should say what you did and why and if you made refinements 
 5. I put I started on the main js file to fet the data and store the data into a let  variable . 
 6. I then spent time debugging the app
 7. I added  the map system 
+8. i then fixed the css code to resemble the website 
+9. IO added aria values to things for screen readers
+10. I then added more css media for mobile devices 
+11.  Deleted superflous code since i do not need it any more
+
 ## Troubleshooting 
     Ask: “What should happen right now?”
     Ask: “What’s actually happening?”
@@ -124,7 +138,24 @@ Problems  will arise every time you code knowing the problem is key to understan
 
 
 ## Reflection
-Sometimes there are questions to reflect on the project but if there is not , Use the area to reflect on what wass learned and how problems were fixed and handled 
+
+Developing the IP Address Tracker was an engaging process that required integrating HTML, CSS, JavaScript, and external APIs to create a functional, interactive web application.
+ My development process began with planning the layout and structure of the HTML page, creating input fields for IP addresses or domains, sections to display results, and a <div> 
+ for the interactive LeafletJS map. Later after finishing the js portion of the code, I then focused on styling the interface, adding hover states, responsive layouts for mobile 
+ devices, and accessibility features like ARIA attributes to improve usability.
+
+The JavaScript portion presented the greatest challenge, particularly in fetching and displaying geolocation data. Initially, I attempted to determine the state using ZIP code 
+ranges, which became superflous once I realized the IPify API already provides the region. I structured my code by creating a Location class to store API responses 
+and separate functions for fetching data, updating the UI, and handling errors. Implementing LeafletJS for map rendering was another learning opportunity. I had to ensure the 
+map initialized correctly, updated dynamically, and centered on the user’s location or searched IP. Error handling and input validation were also critical to maintaining a 
+robust application.
+
+Key solutions included simplifying the state detection logic, restructuring file paths to avoid broken references, and systematically debugging API calls and map updates. 
+I also refined the CSS and layout based on iterative testing across devices to ensure a polished, responsive design.
+
+For potential improvements, I could implement more advanced input validation to detect invalid IPs or domains before querying the API, add smoother map animations, and enhance the user interface with additional styling cues or interactive elements. Overall, this project strengthened my understanding of asynchronous operations, API integration, responsive design,
+ and practical problem-solving in web development.
+
 
 ## References 
 - https://stackoverflow.com/questions/49306970/correct-input-type-for-ip-address
@@ -133,7 +164,11 @@ Sometimes there are questions to reflect on the project but if there is not , Us
 - https://leafletjs.com/
 - https://onecompiler.com/typescript/444nr9wk8
 ### Programs I used 
-
+- Leafjs
+- JavaScript
+- Html
+- Css 
+- Bootstrap
 
 
 
