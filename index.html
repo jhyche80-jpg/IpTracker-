@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-  rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
   <!-- My CSS -->
@@ -22,31 +21,24 @@
 
 <body>
   <header>
-    <div  id="Topchoice" class="d-flex flex-column align-items-center">
+    <div id="Topchoice" class="d-flex flex-column align-items-center">
       <h1>Ip Address Tracker</h1>
-     
-      <div class="d-flex flex-row mb-2 mt-3">
-        <div class="Tool-tip">       
-        <input type="search" class="input-box " placeholder="Search For any Ip Address or domian" 
-        autocomplete="off" style="width: 50vh; " id="InputIP" minlength="7" maxlength="15" 
-        aria-describedby="ip-tooltip" aria-label="Search For any Ip Address or domian"/>
-          <span 
-          class="tooltiptext" 
-          aria-live="polite"
-           aria-label="Ip address must be between 7-15  characters long">
-            Ip address must be between 7-15  characters long
-          </span>
-          </div>
-        <button type="Submit" class="bg-black" id="Search">
+      <div id="ErrorBox"></div>
+      <div class="input-group " >
+        <div class="Tool-tip flex-grow-1">
+          <input type="search" class="input-box" placeholder="Search For any Ip Address" autocomplete="off" id="InputIP"
+            minlength="7" maxlength="15" />
+          <span class="tooltiptext">Ip address must be 7-15 characters</span>
+        </div>
+        <button type="submit" class="bg-black" id="Search">
           <img src="./images/icon-arrow.svg" alt="Submit">
         </button>
+      </div>
 
-      </div> 
-      <div id="ErrorBox"></div>
     </div>
-    <div id="LocaionDisplay" class="d-flex flex-row mt-5 ">
+    <div id="LocaionDisplay" class="d-flex mt-5">
       <div id="Address" class="container">
-        <p class="LocTitle"> IP ADDRESS</p>
+        <p class="LocTitle">IP ADDRESS</p>
         <h2 id="IPcontainer"></h2>
       </div>
       <div id="LocContainer" class="container">
@@ -60,7 +52,6 @@
       <div id="ISP" class="container">
         <p class="LocTitle">ISP</p>
         <h2 id="ISPcontainer"></h2>
-
       </div>
     </div>
   </header>

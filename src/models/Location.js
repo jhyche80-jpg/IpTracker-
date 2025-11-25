@@ -1,5 +1,3 @@
-import { zipRanges } from "../components/state.js";
-
 export default class Location {
     constructor(ip, city, region, postalCode, isp, timezone,lat,lng ) {
         this.ip = ip;
