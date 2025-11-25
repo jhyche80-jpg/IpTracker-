@@ -71,6 +71,21 @@ async function main() {
 }
 
 main();
+window.addEventListener('keydown',function (event){
+    if(event.key ==='Enter'){
+        ErrorBox.innerHTML = "";
+    ErrorBox.style.display = "none";
+    const Ip = ipAddress.value
+    if (Ip=== "") {
+        ErrorBox.innerHTML = `
+        <p><strong>Please enter an IP address: No Address entered!</strong></p>`;
+        ErrorBox.style.display = "inline";
+        return;
+    }
+
+    main();
+    }
+})
 
 search.addEventListener("click", () => {
     ErrorBox.innerHTML = "";
