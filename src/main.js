@@ -78,8 +78,7 @@ search.addEventListener("click", () => {
     const Ip = ipAddress.value
     if (Ip=== "") {
         ErrorBox.innerHTML = `
-        <h3><strong>Please enter an IP address:</strong></h3>
-        <p ><stong>No Address entered!</strong</p>`;
+        <p><strong>Please enter an IP address: No Address entered!</strong></p>`;
         ErrorBox.style.display = "inline";
         return;
     }

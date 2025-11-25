@@ -23,16 +23,19 @@
   <header>
     <div id="Topchoice" class="d-flex flex-column align-items-center">
       <h1>Ip Address Tracker</h1>
-      <div id="ErrorBox"></div>
-      <div class="input-group " >
+           <label for="Input"><span id="ErrorBox"></span></label>
+      <div class="input-group mb-5" >
+       
         <div class="Tool-tip flex-grow-1">
+          
           <input type="search" class="input-box" placeholder="Search For any Ip Address" autocomplete="off" id="InputIP"
-            minlength="7" maxlength="15" />
+            minlength="7" maxlength="15" name="Input" />
           <span class="tooltiptext">Ip address must be 7-15 characters</span>
         </div>
         <button type="submit" class="bg-black" id="Search">
           <img src="./images/icon-arrow.svg" alt="Submit">
         </button>
+    
       </div>
 
     </div>

@@ -1,13 +1,19 @@
 body {
     margin: 0;
     font-family: 'Rubik', Arial, sans-serif;
+    font-size: 18px;
 }
-
+h2{
+    font-size: 18px;
+    font-weight: 500px;
+}
 .attribution {
     font-size: 11px;
     text-align: center;
 }
-
+h1{
+    font-weight: 700px;
+}
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
@@ -56,7 +62,9 @@ input {
 }
 
 header {
-    background-image: url("./images/pattern-bg-desktop.png");
+    background: 
+     linear-gradient(rgba(9, 16, 56, 0.5), rgba(47, 75, 231, 0.5)),
+     url("./images/pattern-bg-desktop.png");
     height: 35vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -121,7 +129,7 @@ button:focus {
     width: 80%;
     background-color: white;
     z-index: 1000;
-    padding: 1.5rem;
+    padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -157,7 +165,7 @@ button:focus {
 @media (max-width: 600px) {
     .input-group {
         max-width: 100%;
-        border: solid white ;
+      
     }
 
     input {
@@ -177,21 +185,23 @@ button:focus {
     }
 
     #Topchoice {
-        width: 90%;
+        width: 100%;
         flex-direction: column;
         gap: 10px;
         align-items: center;
+      
     }
 
     h1 {
         font-size: 1.6rem;
         text-align: center;
+        font-weight: 800px;
     }
 
 
      #LocaionDisplay {
          position: absolute;
-        top: 120px; 
+        top: 180px; 
         left: 50%;
         transform: translateX(-50%);
         height: auto;
