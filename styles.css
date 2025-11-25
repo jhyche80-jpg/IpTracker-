@@ -201,7 +201,7 @@ button:focus {
 
      #LocaionDisplay {
          position: absolute;
-        top: 180px; 
+        top: 150px; 
         left: 50%;
         transform: translateX(-50%);
         height: auto;
@@ -238,5 +238,8 @@ button:focus {
         height: 90vh;
         
     }
+    body{
+        font-size: small
+    };
 
 }
