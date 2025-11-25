@@ -51,29 +51,27 @@ Building a Ip tracker page
 - → Promises 
 - → Error handling(try/catch)
 - → Redirect
-to make an arrow  First, hold down the Alt key. For a left-facing arrow, type the number 27 ←. A right arrow can be inserted by typing the number 26 →. Type the number 24 for an up arrow ↑, or 25 for a down arrow ↓.
+
 ### Questions + Answers  
 - How do I get input?
-
-     I will use the ```<Input>``` tab on it 
- 
+    - I will use the ```<Input>``` tab on it 
  - How do I check it’s valid?
-    The input will be required 
+   - The input will be required 
 - How do I display something back?
-    in the js code , each box will be separated by their inputs. 
+    - In the js code , each box will be separated by their inputs. 
 -  What is LeafletJS and how can i use it to find locations on a map
-    LeafletJS is a light open source, js Liabary to build interactive maps for the web 
+   - LeafletJS is a light open source, js Liabary to build interactive maps for the web 
 - How can i intialize the LeafletJS file 
-    firstly you will make a whole new js file for the map and then defer js into their respective files 
+   - firstly you will make a whole new js file for the map and then defer js into their respective files 
     You can add a dive with the  id of map and in the js you can have a const with the name map.
     in the name you initalize the map and set the starting location and the zoom. 
 - How can I get location and Track the IP address ?  
-Using  IP Geolocation API by IPify I can make an account and then use its api to look up an IP address and their location. 
+    - Using  IP Geolocation API by IPify I can make an account and then use its api to look up an IP address and their location. 
 - How will I display the IP Address  correctly? 
-    I should make and algorithm that will use the following ```<input type="number" class="input-box" placeholder="xxx.xxx.xxx.xx" autocomplete="off" />```
+    - I should make and algorithm that will use the following ```<input type="number" class="input-box" placeholder="xxx.xxx.xxx.xx" autocomplete="off" />```
     this will show the format at which the ip address should be displayed and add a validation function in the code and error handling that will tell the specific problem and how to fix it 
 - How will I get the Ip address of the computer of the person yusing the website to make it display first ?
-    Your website cannot directly see the visitor’s IP address, so you send a request to a public IP lookup API . That API returns the user’s public IP, 
+   -  Your website cannot directly see the visitor’s IP address, so you send a request to a public IP lookup API . That API returns the user’s public IP, 
     which you can then show on your page.Once you have the IP, you can send it to a geolocation API  to get the user’s city, region, and GPS coordinates. 
     Then you can use those coordinates to center the Leaflet map and place a marker at their location.
     making another function.
